@@ -1,0 +1,73 @@
+@font-face {
+    font-family: mine;
+    src: url(../minecraft/Minecraft.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mine;
+}
+
+body{
+    background: url('https://t.ctcdn.com.br/iFVzFD2q26HIbakd39OTh_ykJEY=/0x279:1208x959/1200x675/smart/i362933.png') no-repeat center ;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    background-color: #6d330310;
+    border-radius: 7px;
+    padding: 5%;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+}
+
+.relogio{
+    background-color: rgba(70, 70, 70, 0.281);
+    width: 90%;
+    padding: %, 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px #00000060;
+}
+
+.relogio div{
+    border: 2px solid;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    background: #53260142;
+    box-shadow: black;
+    margin: 2%;
+    padding: 3%;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.relogio span .tempo{
+    font-size: 1rem;
+}
+
+@media(max-width: 500px) {
+
+    h1{
+         font-size: 2rem;
+        top: 3%;
+    }
+
+    .relogio{
+        width: 60%;
+        flex-direction: column;
+    }
+}
